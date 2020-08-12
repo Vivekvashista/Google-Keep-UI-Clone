@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep Clone</title>
+    <link rel="icon" href="./assets/title-icon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="main">
+
+        <!-- navigation bar section start -->
+        <div class="navbar">
+            
+            <!-- left side nav bar -->
+            <div class="left-side-div">
+                <div class="menu-bar-icon">
+                    <span class="material-icons-outlined" title="main menu">menu</span>
+                </div>
+                <div class="logo-div">
+                    <img src="./assets/title-icon.png">
+                    <span class="logo-text">Keep</span>
+                </div>
+            </div>
+
+            <!-- middle nav bar -->
+            <div class="middle-div">
+                <div class="search-div">
+                    <div class=" search-icon">
+                        <span class="material-icons-outlined" title="Search">search</span>
+                    </div>
+                    <input class="search-bar" type="text" placeholder="Search">
+                </div>
+            </div>
+            
+            <!-- right side nav bar -->
+            <div class="right-side-div">
+                <div class="settings" title="Settings">
+                    <span class="material-icons-outlined" >settings</span>
+                </div>
+                <div class="grid-view" title="Grid View">
+                    <span class="material-icons-outlined">grid_on</span>
+                </div>
+                <div class="list-view" title="List View">
+                    <span class="material-icons-outlined">view_stream</span>
+                </div>
+                <div class="refresh" title="Refresh">
+                    <span class="material-icons-outlined">refresh</span>
+                </div>
+                <div class="mini-search" title="Search">
+                    <span class="material-icons-outlined">search</span>
+                </div>
+            </div>
+            
+            <!-- right most div -->
+            <div class="right-most-div">
+                <div class="login-div" title="Profile">
+                    <span class="material-icons-outlined">face</span>
+                </div>
+                <div class="more-apps" title="More Apps">
+                    <span class="material-icons-outlined" >apps</span>
+                </div>
+            </div>
+        </div>
+
+    <!-- body section start -->
+
+    <!-- left side navigations section -->
+        <div class="content-body">
+
+            <!-- left side content -->
+            <div class="left-side-navigation-div">
+                <div class="no-hovers" id="notes">
+                    <div class="material-icons-outlined">emoji_objects</div>
+                    <span class="notes-span">Notes</span>
+                </div>
+                <div class="no-hovers" id="reminders">
+                    <div class="material-icons-outlined">notifications_none</div>
+                    <span class="reminders-span">Reminders</span>
+                </div>
+                <div class="no-hovers" id="edit-label">
+                    <div class="material-icons-outlined">create</div>
+                    <span class="edit-label-span">Edit Labels</span>
+                </div>
+                <div class="no-hovers" id="archive">
+                    <div class="material-icons-outlined">archive</div>
+                    <span class="archive-span">Archive</span>
+                </div>
+                <div class="no-hovers" id="bin">
+                    <div class="material-icons-outlined">delete</div>
+                    <span class="bin-span">Bin</span>
+                </div>
+            </div>
+
+            <!-- right side content -->
+            <div class="right-side-content-div">
+                <div class="title-container">
+                    <div class="note-text-section">
+                        <input type="text" placeholder="Take a note...">
+                    </div>
+                    <div class="side-options">
+                        <div class="new-note">
+                            <span class="material-icons-outlined">assignment_turned_in</span>
+                        </div>
+                        <div class="new-note-with-drawing">
+                            <span class="material-icons-outlined">brush</span>
+                        </div>
+                        <div class="new-note-with-image">
+                            <span class="material-icons-outlined"> insert_photo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Label Dialog -->
+        <div class="edit-labels-dialog">
+            <div class="label-title">Edit labels</div>
+            <div class="label-body">
+                <div class="close-label-btn">
+                    <span class="material-icons-outlined">close</span>
+                </div>
+                <div class="label-text-field">
+                    <input type="text" placeholder="Create new label">
+                </div>
+                <div class="save-label">
+                    <span class="material-icons-outlined">check</span>
+                </div>
+            </div>
+            <div class="label-done-btn">
+                Done
+            </div>
+        </div>
+    </div>
+    <!-- javascript -->
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

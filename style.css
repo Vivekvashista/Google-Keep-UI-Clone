@@ -1,0 +1,344 @@
+/* Quick Access */
+/* border: 1px solid black; */
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* navbar styles */
+.navbar{
+    width: calc(100%-20px);
+    height: calc(64px);
+    padding: 0 10px;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 55% auto 8%;
+    gap: 0 2px;
+    display: grid;
+    align-content: center;
+    border-bottom: 1px solid rgb(205, 207, 209);
+}
+
+/* left side divs styles*/
+.left-side-div, .right-side-div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.menu-bar-icon{
+    width: calc(10%-24px);
+    height: auto;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.logo-div{
+    width: calc(10%-24px);
+    height: auto;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    flex: 1 3 auto;
+}
+.logo-text{
+    font-size: 23px;
+    color: rgb(79, 84, 92);
+    margin-left: 10px;
+}
+[src^="./assets/"]{
+    width: 32px;
+    height: 32px;
+}
+.material-icons-outlined{
+    color: rgb(79, 84, 92);
+}
+.menu-bar-icon:hover{
+    background: rgb(230, 236, 245);
+    border-radius: 50%;
+}
+
+/* center div styles */
+.middle-div{
+    width: 100%;
+    height: 100%;
+}
+.search-div{
+    width: calc(100%-10px);
+    height: calc(100%);
+    padding: 0 5px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50px auto;
+    align-content: center;
+    background: rgb(230, 236, 245);
+    border-radius: 0.5rem;
+}
+.search-icon, .search-bar{
+    width: calc(100%-24px);
+    height: auto;
+    padding: 10px 12px;
+}
+.search-icon:hover{
+    background: rgb(218, 224, 230);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-bar{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.search-bar:focus{
+    background: none;
+}
+
+.search-div-effects{
+    transition: 200ms;
+    background: none;
+    box-shadow: 1px 1px 5px 2px rgb(218, 224, 230);
+}
+
+
+/* right side divs styles*/
+
+.right-side-div, .right-most-div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,255,255);
+}
+
+.more-apps, .settings, .grid-view, .list-view, .refresh, .login-div, .mini-search{
+    width: calc(10%-24px);
+    height: auto;
+    padding: 10px 12px;
+}
+
+.grid-view{
+    display:none;
+}
+.mini-search{
+    display: none;
+}
+.more-apps:hover, .settings:hover, .grid-view:hover, .list-view:hover, .refresh:hover, .login-div:hover, .mini-search:hover{
+    background: rgb(218, 224, 230);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* content body styles*/
+
+.content-body{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 5% auto;
+}
+
+/* left side navigation styles */
+
+.left-side-navigation-div>div>span{
+    display: none;
+}
+
+.single-navigation{
+    width: 280px;
+    height: 100%;
+    /* box-shadow: 2px 0 5px 0 rgb(205, 207, 209); */
+}
+
+.no-hovers{
+    width: 50px;
+    height: 100%;
+    margin-left: 10px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hovers{
+    width: 250px;
+    height: 100%;
+    padding-left: 23px;
+    border-radius: 0 25px 25px 0;
+    font-size: 14px;
+    font-family: 'Cabin', sans-serif;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    align-content: center;
+    justify-content: flex-start;
+    column-gap: 20%;
+}
+
+.inactive{
+    background: rgb(230, 236, 245);
+    cursor: pointer;
+}
+.active{
+    background: rgb(255, 232, 186);
+    cursor: pointer;
+}
+
+.left-side-navigation-div{
+    /* border: 1px solid violet; */
+    height: 250px;
+    margin: 10px 0 0 0;
+    display: flex;
+    z-index: 2;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* right side navigation styles */
+
+.right-side-content-div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.title-container{
+    width: 50%;
+    height: 45px;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 4px rgb(218, 224, 230);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    align-content: stretch;
+}
+
+.side-options{
+    /* border: 1px solid violet; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.side-options>div{
+    padding: 10px 12px;
+}
+.side-options>div:hover{
+    background: rgb(230, 236, 245);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.note-text-section{
+    display: flex;
+    align-items: center;
+}
+.note-text-section>input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Cabin', sans-serif;
+    /* border: 1px solid violet; */
+    opacity: 0.9;
+}
+
+/* Edit Label Dialog */
+
+.edit-labels-dialog{
+    width: 300px;
+    height: 170px;
+    box-shadow: 1px 1px 5px 4px rgb(218, 224, 230);
+    background: rgb(255,255,255);
+    position: fixed;
+    top:25%;
+    left: 25%;
+    bottom: 25%;
+    right: 25%;
+    margin: auto;
+    z-index: 3;
+    display: none;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    font-family: 'Cabin', sans-serif;
+}
+
+.label-title{
+    width: 100%;
+    padding: 20px 0 0 15px;
+}
+
+.label-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(205, 207, 209);
+}
+
+.label-text-field>input{
+    outline: none;
+    border: none;
+}
+
+.label-done-btn{
+    border: none;
+    background: rgb(255,255,255);
+    padding: 15px 25px 0 0;
+    color: rgb(79, 84, 92);
+    font-size: 14px;
+    text-align: right;
+    cursor: pointer;
+}
+
+
+/* media queries */
+@media only screen and (max-width:500px){
+    .navbar{
+        height: 56px;
+    }
+}
+
+@media only screen and (max-width:795px){
+    .navbar{
+        grid-template-columns: auto 0% auto auto;
+    }
+    .search-div{
+        display: none;
+    }
+    .mini-search{
+        display: block;
+    }
+    .right-side-div, .right-most-div{
+        justify-content: space-around;
+    }
+    .title-container{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:465px){
+    .content-body{
+        grid-template-columns: 70px 340px;
+    }
+    .navbar{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .title-container{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .title-container{
+        width: 300px;
+    }
+}
